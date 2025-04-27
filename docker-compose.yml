@@ -10,6 +10,8 @@ services:
        PG_DATABASE: $PG_DATABASE
        PG_USER: $PG_USER
        PG_PASSWORD: $PG_PASSWORD
+       SOLANA_NODE_RPC_ENDPOINT: $SOLANA_NODE_RPC_ENDPOINT
+       SOLANA_NODE_WSS_ENDPOINT: $SOLANA_NODE_WSS_ENDPOINT
     restart: unless-stopped
     networks:
        - web
