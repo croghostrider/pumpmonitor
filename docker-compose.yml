@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  pumpmonitor:
+    build: .
+    container_name: pumpmonitor
+    restart: unless-stopped
+    networks:
+       - web
+
+networks:
+  web:
+    external: true
+    name: web
